@@ -23,10 +23,13 @@ JENKINS
 UNIX & SHELL SCRIPTING
 -----------
 13. Command to find empty files in a given directory?
-14. Commands you will use it for configuring ssh connectivity between 2 machines and what files will be present in .ssh folder?
-15. How to schedule a shell script in unix machines?
-16. Command to get load average ?
-17. Need to identify ip addresses in log file and count of ip addresses in log file?
+find  /tmp -type f -empty
+16. Commands you will use it for configuring ssh connectivity between 2 machines and what files will be present in .ssh folder?
+17. How to schedule a shell script in unix machines?
+18. Command to get load average ?
+19. Need to identify ip addresses in log file and count of ip addresses in log file?
+
+grep "([0-9]{1,3}[/.]){3}[0-9]{1,3}" filename | sort | uniq -c
 
 ANSIBLE
 ------------
