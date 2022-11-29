@@ -6,11 +6,14 @@ Unix & Shell
 5. set of commands executed at multiples places in shell script, want to standardize that is it possible something like to define function?
 6. In shell script can we supply parameters to functions?
 7. what is the use of shift command?
+The shift command changes the values of the batch parameters %0 through %9 by copying each parameter into the previous one
 10. difference between break and exit 0 in shell script?
-11. delete files which are older than 10 days?
-12. delete empty files in a given directory?
+break is used to exit from the loop. exit is used to exit from the program
+12. delete files which are older than 10 days?
 
-
+find /path/to/files* -mtime +5 -exec rm {} \;
+13. delete empty files in a given directory?
+ find . -type f -empty -print -delete
 
 Monitoring 
 -----
